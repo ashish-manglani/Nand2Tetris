@@ -34,8 +34,7 @@ int main()
 	string output_file=file_name.substr(0,file_name.length()-4)+".hack";
 	ofstream MyWriteFile(output_file);
 	
-	std::map<string, int> address;
-	int nxt_instruction=0;
+	std::map<string, int> address;	// for symbols and labels
 	
 	// create destination_map
 	map<string,string> destination_map;
@@ -118,7 +117,7 @@ int main()
 	address["KBD"]= 24576;
 	
 	// first pass, look for labels
-	
+    int nxt_instruction=0;
     string myText;
     while (getline (MyReadFile, myText)) 
     {
@@ -255,7 +254,7 @@ int main()
                 
                 write+="000";   // no-destination
                 
-                write+=jump_map[jmp]; // no-jump
+                write+=jump_map[jmp];
             }
             MyWriteFile<<write<<endl;
         }
