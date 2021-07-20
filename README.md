@@ -2,7 +2,7 @@
 
 ## Project Details
 
-This project is a the fruitful result of completing the 6 week long Nand2tetris course offered by [Nand2tetris.org](https://www.nand2tetris.org/) along with the book "The Elements of Computing System".
+This project is the fruitful result of completing the 6 week long Nand2tetris course offered by [Nand2tetris.org](https://www.nand2tetris.org/) along with the book "The Elements of Computing System".
 
 
 ### 1. Logic Gates
